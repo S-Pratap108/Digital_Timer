@@ -1,0 +1,9 @@
+{
+    "tasks": [
+        {
+            "type": "npm",
+            "script": "format",
+            "label": "npm: format"
+        }
+    ]
+}

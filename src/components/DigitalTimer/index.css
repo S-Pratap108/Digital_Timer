@@ -1,0 +1,126 @@
+.main-bg {
+  background-image: linear-gradient(to right, #ffffff, #cffcf1);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hdg {
+  color: #0f172a;
+}
+
+.card {
+  display: flex;
+  flex-direction: row;
+  width: 70vw;
+  justify-content: space-evenly;
+}
+
+@media (max-width: 576px) {
+  .card {
+    display: flex;
+    flex-direction: column;
+    width: 70vw;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.timer-cont {
+  background-image: url('https://assets.ccbp.in/frontend/react-js/digital-timer-elapsed-bg.png');
+  background-size: auto;
+  width: 50vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 576px) {
+  .timer-cont {
+    background-image: url('https://assets.ccbp.in/frontend/react-js/digital-timer-elapsed-bg.png');
+    background-size: auto;
+    width: 50vw;
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.clock-cont {
+  background-color: #ffffff;
+  height: 200px;
+  width: 200px;
+  border-radius: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.timer {
+  color: #00d9f5;
+  font-size: 40px;
+  font-weight: bolder;
+}
+
+.status {
+  color: #0f172a;
+  font-weight: bold;
+}
+
+.operation-cont {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.opertors-cont {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 300px;
+  align-items: center;
+}
+
+.icon {
+  height: 25px;
+  width: 25px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.control-btns-cont {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.set-no {
+  background-image: linear-gradient(to right, #6fffdb, #00d9f5);
+  padding-left: 25px;
+  padding-right: 25px;
+  text-align: center;
+  border-radius: 10px;
+  margin: 10px;
+  font-size: 25px;
+}
+
+.control-btn {
+  font-size: 30px;
+  font-weight: bolder;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.para {
+  font-size: 25px;
+  margin-right: 20px;
+  font-weight: 700;
+}

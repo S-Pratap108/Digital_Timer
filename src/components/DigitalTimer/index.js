@@ -56,9 +56,11 @@ class DigitalTimer extends Component {
         <div className="card">
           <div className="timer-cont">
             <div className="clock-cont">
-              <p className="timer">
-                {mins} : {seconds}
-              </p>
+              <h className="timer">
+                {mins}
+                {seconds < 10 ? ':0' : ':'}
+                {seconds}
+              </h>
               {isPaused ? (
                 <p className="status">Paused</p>
               ) : (
@@ -78,14 +80,22 @@ class DigitalTimer extends Component {
                 className="icon"
                 onClick={isPaused ? this.startTimer : this.pauseTimer}
               />
-              <p className="para"> {isPaused ? 'Start' : 'Pause'} </p>
+              <button
+                type="button"
+                className="para"
+                onClick={isPaused ? this.startTimer : this.pauseTimer}
+              >
+                {isPaused ? 'Start' : 'Pause'}
+              </button>
               <img
                 src="https://assets.ccbp.in/frontend/react-js/reset-icon-img.png"
-                alt="pause icon"
+                alt="reset icon"
                 className="icon"
                 onClick={this.resetTimer}
               />
-              <p className="para"> Reset </p>
+              <button type="button" className="para" onClick={this.resetTimer}>
+                Reset
+              </button>
             </div>
             <p> Set Timer Limit </p>
             <div className="control-btns-cont">

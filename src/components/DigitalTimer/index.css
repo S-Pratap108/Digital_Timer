@@ -123,4 +123,7 @@
   font-size: 25px;
   margin-right: 20px;
   font-weight: 700;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
 }
